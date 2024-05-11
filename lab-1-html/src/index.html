@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="Description" content="Description of my first HTML.">
+  <meta name="Keywords" content="Html, my first exercise of second module">
+  <meta name="author" content="Nicolas Klein">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My HTML learning journey</title>
+
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      padding: 8px;
+    }
+
+  </style>
+</head>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="form.html">Form Page</a>
+</nav>
+
+<body>
+  <header>
+    <h1>My HTML learning journey</h1>
+  </header>
+
+    <article>
+      <h2>Learning elements - div, span, p, pre, ul, li, ol, article</h2>
+
+      <!--Adding divs-->
+
+      <div>HTML</div>
+      <div>CSS</div>
+      <div>JavaScript</div>
+
+      <!-- Adding spans-->
+
+      <span>This</span>
+      <span>a</span>
+      <span>span</span>
+
+      <!--Adding a p and pre tags-->
+
+      <p>p represents a paragraph without preserving spacing</p>
+
+      <pre>
+        Text in         a pre element
+is displayed in a fixed-width
+font, and it preserves
+both      spaces and
+line breaks
+      </pre>
+
+      <!--Adding unordered list-->
+
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>
+          Item 4
+          <ul>
+            <li>Nested Item 1</li>
+            <li>Nested Item 2</li>
+          </ul>
+        </li>
+      </ul>
+
+      <!-- Adding ordered list-->
+
+      <ol>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+      </ol>
+
+    </article>
+
+
+
+<!-- IV. HTML Tables -->
+
+<article>
+
+  <h2>Understanding HTML Tables</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th colapsan="2">First header (Cell with colapsan)</th>
+          <th>Third header</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>First cell - first row</td>
+          <td>Second cell - first row</td>
+          <td>Third cell - first row</td>
+        </tr>
+        <tr>
+          <td rowspan="2">Firsr cell (rowspan) - second row</td>
+          <td>Second cell - second row</td>
+        </tr>
+        <tr>
+          <td>Second cell - third row</td>
+          <td>Third cell - third row</td>
+        </tr>
+      </tbody>  
+  </table>
+  
+<!--V. Images, Video, and Audio-->
+  
+<article>
+
+  <H2>Media Integration</H2>
+  <img src="https://picsum.photos/400/400" alt="Random Image" width="400px" height="400px"/>
+  <img src="/assets/html_lab_image.jpg" alt="Local Image" width="400px" height="400px"/>
+
+  <video controls width="250">
+    <source src="/assets/flower.webm" type="video/webm">
+    Sorry, your browser doesn't support embedded videos.
+  </video>
+  <figure>
+    <audio controls src="/assets/t-rex-roar.mp3">
+      your browser does not support the <code>audio</code> elemnt.
+    </audio>
+  </figure>
+</article>
+
+
+<!-- VI. HTML Forms -->
+
+<body>
+  <form method="POST" action="http://127.0.0.1:5500/form.html">
+    <div>
+      <label for="" first_name>First Name:</label>
+      <input type="text" id="first_name" name="first_name">
+    </div>
+    <div>
+      <label for="last_name">Last Name:</label>
+      <input type="text" id="last_name" name="last_name">
+    </div>
+    <div>
+      <p>Favorite Coding Lenguage:</p>
+      <label><input type="radio" name="lenguage" value="Python">Python</label>
+      <label><input type="radio" name="language" value="JavaScript"> JavaScript</label>
+      <label><input type="radio" name="language" value="Java"> Java</label>
+    </div>
+    <div>
+      <p>Types of Vehicles Owned: </p>
+      <label><input type="checkbox" name="vehicle1" value="Bike">Bike</label>
+      <label><input type="checkbox" name="vehicle2" value="Car">Car</label>
+      <label><input type="checkbox" name="vehicle" value="Boat">Boat</label>
+    </div>
+    <div>
+      <label for="car_brand">Car Brand:</label>
+      <select name="car_brand" id="car_brand">
+        <option value="toyota">Toyota</option>
+        <option value="honda">Honda</option>
+        <option value="ford">Ford</option>
+      </select>
+    </div>
+    <button type="submit">Submit Form</button>
+  </form>
+</body>
+
+
+
+
+    <footer>
+      Copyright &copy; 2024
+    </footer>
+</body>
+
+</html>

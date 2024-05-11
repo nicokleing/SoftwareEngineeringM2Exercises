@@ -1,0 +1,121 @@
+/* I. Selectors */
+/* Put styles for questions 1.1, 1.2, 1.3 and 1.4 here */
+article {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.style-me1 {
+    color: red;
+}
+
+#style-me1 {
+    color: blue;
+}
+
+#style-me2.style-me1 {
+    color: purple;
+}
+
+/* Put styles for questions 2.1 and 2.2 here */
+
+.my-descendants-are-styled p {
+    background-color: red;
+}
+
+.my-descendants-are-styled > p {
+    background-color: lightgreen;
+}
+
+
+/* II. Box model and common properties */
+/* Put styles for questions 1-8 here */
+
+.box {
+    background-color: lightblue;
+    margin: 10px 20px 30px 40px;
+    padding: 5px 10px;
+    width: 50vw;
+    height: 20vh;
+    border: 5px solid red;
+    border-style: dotted;
+    box-sizing: border-box;
+    overflow: auto;
+    outline: 10px solid green;
+    border-radius: 20px;
+    background-image: url('./assets/images/img1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* III. Positioning */
+/* Put styles for questions 1-3 here */
+
+.position-abosolute {
+    position: absolute;
+    top: 10px;
+    background-color: yellow;
+}
+
+.position-relative {
+    position: sticky;
+    top: 20px;
+    background-color: lightgrey;
+}
+
+
+
+
+/* IV. Styling text */
+/* Put styles for questions 1-10 here */
+
+.text-style {
+    color: black;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+
+/* V. Styling links */
+/* Put styles for questions 1-3 here */
+
+a, a:link {
+    color: blue;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:visited {
+    color: purple;
+}
+a:hover, a:active, a:focus {
+    color: darkblue;
+    text-decoration: underline;
+}
+
+
+
+
+/* VI. calc() */
+/* Put styles for questions 1-3 here */
+
+.calc-style {
+    width: 100vw;
+    background-color: orange;
+    width: calc(100vw - 100px);
+}
+
+.fixed-width-col{
+    width: 350px;
+    display: inline-block;
+}
