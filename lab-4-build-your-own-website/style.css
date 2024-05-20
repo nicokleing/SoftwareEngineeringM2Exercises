@@ -103,7 +103,8 @@ html {
 }
 
 .sticky {
-  position: fixed;
+  position: fixed; /* Since the class is called sticky, it would be better to make this*/
+  /*position be sticky for better understanding*/
   top: 0;
 }
 

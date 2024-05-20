@@ -70,6 +70,10 @@ a {
     flex-wrap: wrap; 
 }
 
+/* The "flex-basis-50" class isn't used in the HTML anywhere so*/
+/* this class should be named "flex-basis-item-50" instead.*/
+/* The exercise document did say "flex-basis-50" though and that typo*/
+/* has now been corrected. */
 .flex-basis-50 {
     flex-basis: 50%; 
 }

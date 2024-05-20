@@ -1,0 +1,8 @@
+position: absolute is used a lot in this website, and it's causing issues with different screen sizes
+(like some buttons disappear or some text is invisible, etc.)
+
+position: absolute is used sparingly as it's better to get the browser to handle the document
+layout flow in a lot of cases. Using position: absolute requires us to tell the browser
+exactly where to put the element, and that can change depending on screen sizes, font sizes,
+how zoomed in the screen is, etc. It would be a lot easier to change this website to use
+something like flexbox instead.

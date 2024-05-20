@@ -118,16 +118,24 @@ line breaks
 
   <H2>Media Integration</H2>
   <img src="https://picsum.photos/400/400" alt="Random Image" width="400px" height="400px"/>
+  <!--The src should not have a / at the start. The "/" will try to get the-->
+  <!--image from the assets folder in the "root directory", but there is no-->
+  <!--assets folder in the root directory, so that fails. Removing the "/"-->
+  <!--will fix the problem-->
   <img src="/assets/html_lab_image.jpg" alt="Local Image" width="400px" height="400px"/>
 
   <video controls width="250">
+    <!--Same here - the "/ should not be used here"-->
     <source src="/assets/flower.webm" type="video/webm">
     Sorry, your browser doesn't support embedded videos.
   </video>
   <figure>
+    <!--and here as well-->
     <audio controls src="/assets/t-rex-roar.mp3">
       your browser does not support the <code>audio</code> elemnt.
     </audio>
+    <!--The exercise is expecting a figcaption here. A figcaption would be used-->
+    <!--to describe the content of the parent <figure> element-->
   </figure>
 </article>
 

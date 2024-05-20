@@ -10,6 +10,10 @@ window.addEventListener("scroll", () => {
 });
 
 const mainFn = () => {
+  /* The reason you need this part of the code is because the "sticky" class is not using
+  position: sticky. It is using position: fixed instead. If you make the "sticky" class use
+  position: sticky instead, this if else statement would not be needed. Using the CSS route would
+  be preferred.*/
   if (window.pageYOffset >= navbarOffsetTop) {
     navbar.classList.add("sticky");
   } else {
@@ -36,6 +40,12 @@ const mainFn = () => {
 
 mainFn();
 
+/*
+This reloads the page every time the size changes.
+This uses extra system resources and can make things slow. It is also
+inconvenient for the user as everything would disappear and come back if they change the size.
+This part should be removed to increase performance and to keep your UI on the screen all the time.
+*/
 window.addEventListener("resize", () => {
   window.location.reload();
 });

@@ -37,7 +37,10 @@ article {
     margin: 10px 20px 30px 40px;
     padding: 5px 10px;
     width: 50vw;
-    height: 20vh;
+    height: 20vh;   /* The "important" operator is missing from the height property here.*/
+    /* The "important" operator would override the inline style for an element with the box */
+    /* class in the HTML. Without the "important" operator, the height will be controlled */
+    /* by the inline style. */
     border: 5px solid red;
     border-style: dotted;
     box-sizing: border-box;
@@ -60,10 +63,16 @@ article {
 }
 
 .position-relative {
+    /* Since this class is named position-relative, it would be better to*/
+    /* use position: sticky; in this class*/
     position: sticky;
     top: 20px;
     background-color: lightgrey;
 }
+
+/*The exercise was asking for a "position-sticky" class but there was none put in here.*/
+/*Adding a "position-sticky" class here would allow for the element with the "position-sticky*/
+/*class to stick to the viewport when scrolling past it*/
 
 
 
@@ -75,7 +84,9 @@ article {
     color: black;
     font-size: 16px;
     line-height: 1.5;
-    font-weight: 400px;
+    font-weight: 400px; /* The font-weight property does not support "px" values.*/
+    /*This link explains the values that the font-weight property supports*/
+    /*https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight*/
     font-family: 'Roboto', sans-serif;
     text-align: center;
     letter-spacing: 2px;
@@ -119,3 +130,7 @@ a:hover, a:active, a:focus {
     width: 350px;
     display: inline-block;
 }
+
+/* There is a missing "fluid-col" class. The intention was to have the fixed-width-col*/
+/* have a fixed width, and then the element with the "fluid-col" class would take up the*/
+/*remaining space that was not used by the "fixed-width-col" class.*/
